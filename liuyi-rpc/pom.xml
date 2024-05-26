@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>liuyi-annotation</module>
+        <module>liuyi-common</module>
     </modules>
 
     <properties>
