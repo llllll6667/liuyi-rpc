@@ -1,4 +1,4 @@
-package com.liuyi.rpc.common;
+package com.liuyi.rpc.common.scanner;
 
 import java.io.File;
 import java.io.FileFilter;
