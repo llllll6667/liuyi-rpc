@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 public class RpcReferenceScanner extends ClassScanner {
-    private static final Logger LOGGER = LoggerFactory.getLogger(RpcReferenceScanner.class);
+    private static final Logger logger = LoggerFactory.getLogger(RpcReferenceScanner.class);
 
 
 
@@ -34,7 +34,7 @@ public class RpcReferenceScanner extends ClassScanner {
                     RpcReference rpcReference = field.getAnnotation(RpcReference.class);
                     if(rpcReference != null){
                         //TODO 处理后序逻辑，将@RpcReference注解标注的接口引用代理对象，放入全局缓存中
-
+                        logger.info("@RpcReference注解扫描信息:{}",clazz.getName());
                     }
                 }));
             } catch (ClassNotFoundException e) {

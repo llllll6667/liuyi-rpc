@@ -12,7 +12,23 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Component
 public @interface RpcService {
+    /**
+     * 接口的class
+     */
+    Class<?> interfaceClass() default Object.class;
 
+    /**
+     * 接口的className
+     */
+    String interfaceClassName() default "";
 
+    /**
+     * 版本号
+     */
+    String version() default "1.0.0";
 
+    /**
+     * 服务分组，默认为空
+     */
+    String group() default "";
 }

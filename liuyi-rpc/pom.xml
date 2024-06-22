@@ -11,6 +11,7 @@
     <modules>
         <module>liuyi-annotation</module>
         <module>liuyi-common</module>
+        <module>liuyi-provider</module>
     </modules>
 
     <properties>
